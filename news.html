@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest news and announcements from Invictus MUN 2026 — stay updated on registrations, committees, and events.">
+  <title>News — Invictus MUN 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader"><div class="loader-logo">IV MUN</div><div class="loader-bar"></div><div class="loader-text">Loading Experience</div></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IV <span>MUN</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html" class="active">News</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="registration.html" class="btn btn-primary btn-sm" style="margin-left:4px;">Register</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html" class="active">News</a><a href="certificate.html">Certificate</a><a href="contact.html">Contact</a><a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a>
+  </div>
+
+  <div class="search-modal">
+    <div class="search-box">
+      <div class="search-input-wrap"><i class="fas fa-search"></i><input type="text" placeholder="Search committees, pages, FAQs..." autocomplete="off"><kbd style="font-size:0.7rem;color:var(--text-muted);background:var(--glass-bg);border:1px solid var(--glass-border);padding:2px 8px;border-radius:4px;">ESC</kbd></div>
+      <div class="search-results"><div class="search-hint">Type at least 2 characters to search...</div></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> <span class="sep"><i class="fas fa-chevron-right"></i></span> <span class="current">News</span></div>
+      <div class="section-label" style="justify-content:center;">Stay Updated</div>
+      <h1 class="section-title mt-2">News & <span class="gold-text">Announcements</span></h1>
+      <p class="section-desc mx-auto" style="text-align:center;">The latest updates from the Invictus MUN secretariat.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="news-filters anim">
+        <button class="news-filter-btn active" data-filter="all">All</button>
+        <button class="news-filter-btn" data-filter="announcement">Announcements</button>
+        <button class="news-filter-btn" data-filter="committee">Committees</button>
+        <button class="news-filter-btn" data-filter="update">Updates</button>
+      </div>
+
+      <!-- Featured Announcement -->
+      <div class="news-card glass anim anim-delay-1" style="border: 2px solid var(--gold); margin-bottom: 2rem; grid-column: 1 / -1;">
+        <h2 class="section-title mt-2" style="text-align:center;">Registrations are Live Now!</h2>
+        <p class="section-desc mx-auto" style="text-align:center; font-size:1.2rem; margin-bottom: 1.5rem;">Secure your spot for IV MUN 2026 before seats fill up!</p>
+        <a href="registration.html" class="btn btn-primary btn-lg" style="display:block; width: fit-content; margin: 0 auto;">Register Now<i class="fas fa-arrow-right"></i></a>
+      </p>
+
+      <!-- News Grid -->
+      <div class="grid grid-3">
+        <!--
+        <div class="news-card glass anim anim-delay-1" data-category="announcement">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-1/600/400.jpg" alt="Registration Open">
+          <div class="news-card-body">
+            <div class="news-card-date">December 10, 2025 &bull; Announcement</div>
+            <h4 class="news-card-title">Registration Now Open for IV MUN 2026</h4>
+            <p class="news-card-excerpt">We are thrilled to announce that delegate registrations for all five committees are now officially open. Secure your spot before seats fill up!</p>
+            <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-2" data-category="update">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-2/600/400.jpg" alt="EB Closed">
+          <div class="news-card-body">
+            <div class="news-card-date">November 28, 2025 &bull; Update</div>
+            <h4 class="news-card-title">Executive Board Applications Closed</h4>
+            <p class="news-card-excerpt">Thank you to all who applied for EB positions. The selection process is now underway and selected members will be notified soon.</p>
+            <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-3" data-category="committee">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-3/600/400.jpg" alt="Agendas Revealed">
+          <div class="news-card-body">
+            <div class="news-card-date">November 15, 2025 &bull; Committees</div>
+            <h4 class="news-card-title">Committee Agendas Officially Revealed</h4>
+            <p class="news-card-excerpt">Explore the exciting and thought-provoking agendas for each of our five committees at IV MUN 2026.</p>
+            <a href="committees.html" class="news-card-link">View Committees <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-1" data-category="announcement">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-4/600/400.jpg" alt="Chief Guest">
+          <div class="news-card-body">
+            <div class="news-card-date">November 5, 2025 &bull; Announcement</div>
+            <h4 class="news-card-title">Chief Guest Announcement Coming Soon</h4>
+            <p class="news-card-excerpt">We are in talks with a distinguished public figure for our opening ceremony keynote. Stay tuned for the big reveal!</p>
+            <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-2" data-category="update">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-5/600/400.jpg" alt="Venue Confirmed">
+          <div class="news-card-body">
+            <div class="news-card-date">October 20, 2025 &bull; Update</div>
+            <h4 class="news-card-title">Venue Finalized for IV MUN 2026</h4>
+            <p class="news-card-excerpt">We are excited to confirm our venue — a state-of-the-art facility that will provide the perfect setting for diplomatic discourse.</p>
+            <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-3" data-category="committee">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-6/600/400.jpg" alt="UNSC Crisis">
+          <div class="news-card-body">
+            <div class="news-card-date">October 10, 2025 &bull; Committees</div>
+            <h4 class="news-card-title">UNSC to Feature Crisis Elements</h4>
+            <p class="news-card-excerpt">The UNSC committee at IV MUN 2026 will include real-time crisis updates, adding an extra layer of challenge for advanced delegates.</p>
+            <a href="committees.html#unsc" class="news-card-link">Learn About UNSC <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-1" data-category="announcement">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-7/600/400.jpg" alt="IV MUN Teaser">
+          <div class="news-card-body">
+            <div class="news-card-date">September 25, 2025 &bull; Announcement</div>
+            <h4 class="news-card-title">Invictus MUN 2026 — Official Teaser</h4>
+            <p class="news-card-excerpt">The fourth edition of Invictus MUN is coming. Watch our official teaser and get ready for the most anticipated MUN conference of the year.</p>
+            <a href="#" class="news-card-link">Watch Teaser <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-2" data-category="update">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-8/600/400.jpg" alt="Website Launch">
+          <div class="news-card-body">
+            <div class="news-card-date">September 15, 2025 &bull; Update</div>
+            <h4 class="news-card-title">Official Website Launched</h4>
+            <p class="news-card-excerpt">Welcome to the new official website of Invictus MUN 2026. Explore committees, register, and stay updated — all in one place.</p>
+            <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card glass anim anim-delay-3" data-category="committee">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivnews-9/600/400.jpg" alt="PNA Announced">
+          <div class="news-card-body">
+            <div class="news-card-date">September 1, 2025 &bull; Committees</div>
+            <h4 class="news-card-title">PNA Committee Introduced for First Time</h4>
+            <p class="news-card-excerpt">For the first time in IV MUN history, we are introducing the Pakistan National Assembly — a domestic committee perfect for beginners.</p>
+            <a href="committees.html#pna" class="news-card-link">About PNA <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <button class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo" style="font-size:1.6rem;">IV <span>MUN</span></a><p>Invictus Model United Nations 2026 — Where diplomacy meets destiny.</p><div class="footer-social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a></div></div>
+        <div><div class="footer-title">Quick Links</div><div class="footer-links"><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a></div></div>
+        <div><div class="footer-title">Resources</div><div class="footer-links"><a href="news.html">News</a><a href="certificate.html">Certificate Verification</a><a href="#">Study Guides</a><a href="#">Code of Conduct</a></div></div>
+        <div><div class="footer-title">Contact</div><div class="footer-links"><a href="mailto:info@ivmun.com"><i class="fas fa-envelope" style="width:16px;"></i> info@ivmun.com</a><a href="tel:+0000000000"><i class="fas fa-phone" style="width:16px;"></i> +00 000 000 000</a></div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copy">&copy; 2025 Invictus MUN. All rights reserved.</div><div class="footer-dev">Developed by Hammad Ali Khan &nbsp;<a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a></div></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

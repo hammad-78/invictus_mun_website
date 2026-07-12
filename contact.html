@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with the Invictus MUN 2026 team — email, WhatsApp, social media, and venue location.">
+  <title>Contact — Invictus MUN 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader"><div class="loader-logo">IV MUN</div><div class="loader-bar"></div><div class="loader-text">Loading Experience</div></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IV <span>MUN</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html">News</a><a href="contact.html" class="active">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="registration.html" class="btn btn-primary btn-sm" style="margin-left:4px;">Register</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html">News</a><a href="certificate.html">Certificate</a><a href="contact.html" class="active">Contact</a><a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a>
+  </div>
+
+  <div class="search-modal">
+    <div class="search-box">
+      <div class="search-input-wrap"><i class="fas fa-search"></i><input type="text" placeholder="Search committees, pages, FAQs..." autocomplete="off"><kbd style="font-size:0.7rem;color:var(--text-muted);background:var(--glass-bg);border:1px solid var(--glass-border);padding:2px 8px;border-radius:4px;">ESC</kbd></div>
+      <div class="search-results"><div class="search-hint">Type at least 2 characters to search...</div></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> <span class="sep"><i class="fas fa-chevron-right"></i></span> <span class="current">Contact</span></div>
+      <div class="section-label" style="justify-content:center;">Get in Touch</div>
+      <h1 class="section-title mt-2">Contact <span class="gold-text">Us</span></h1>
+      <p class="section-desc mx-auto" style="text-align:center;">Have a question? We'd love to hear from you. Reach out through any of the channels below.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="anim-left">
+          <h3 style="margin-bottom:8px;">Reach Out <span class="gold-text">Directly</span></h3>
+          <p style="margin-bottom:32px;">Our team typically responds within 24 hours. For urgent queries, please reach out on WhatsApp.</p>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:hammadalikhan9078@gmail.com">hammadalikhan9078@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-info-label">WhatsApp</div>
+              <div class="contact-info-value"><a href="https://wa.me/923714744050" target="_blank" rel="noopener">+92 371 4744050</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fab fa-instagram"></i></div>
+            <div>
+              <div class="contact-info-label">Instagram</div>
+              <div class="contact-info-value"><a href="https://instagram.com/iv_mun2026" target="_blank" rel="noopener">@iv_mun2026</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info-label">Venue Location</div>
+              <div class="contact-info-value">Full venue address will be updated here</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="anim-right">
+          <div class="glass-static" style="padding:40px;">
+            <h3 style="margin-bottom:24px;">Send a <span class="gold-text">Message</span></h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" id="contactName" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" id="contactEmail" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <select class="form-select form-input" id="contactSubject">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="registration">Registration Query</option>
+                  <option value="committee">Committee Information</option>
+                  <option value="sponsorship">Sponsorship</option>
+                  <option value="certificate">Certificate Issue</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea class="form-textarea" id="contactMessage" placeholder="Write your message here..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-4 anim">
+        <div class="section-label" style="justify-content:center;">Find Us</div>
+        <h2>Venue <span class="gold-text">Location</span></h2>
+      </div>
+      <div class="venue-map anim">
+        <div class="venue-map-placeholder">
+          <i class="fas fa-map-location-dot"></i>
+          <p>Google Maps Embed Placeholder</p>
+          <p style="font-size:0.75rem;">Replace with actual Google Maps iframe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo" style="font-size:1.6rem;">IV <span>MUN</span></a><p>Invictus Model United Nations 2026 — Where diplomacy meets destiny.</p><div class="footer-social"><a href="https://instagram.com/iv_mun2026" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://wa.me/923714744050" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+        <div><div class="footer-title">Quick Links</div><div class="footer-links"><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a></div></div>
+        <div><div class="footer-title">Resources</div><div class="footer-links"><a href="news.html">News</a><a href="certificate.html">Certificate Verification</a><a href="#">Study Guides</a><a href="#">Code of Conduct</a></div></div>
+        <div><div class="footer-title">Contact</div><div class="footer-links"><a href="mailto:hammadalikhan9078@gmail.com"><i class="fas fa-envelope" style="width:16px;"></i> hammadalikhan9078@gmail.com</a><a href="https://wa.me/923714744050" target="_blank" rel="noopener"><i class="fab fa-whatsapp" style="width:16px;"></i> +92 371 4744050</a></div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copy">&copy; 2025 Invictus MUN. All rights reserved.</div><div class="footer-dev">Developed by Hammad Ali Khan &nbsp;<a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const subject = document.getElementById('contactSubject').value;
+      const message = document.getElementById('contactMessage').value.trim();
+
+      if (!name || !message) {
+        alert('Please fill in at least your name and message.');
+        return;
+      }
+
+      const text =
+        `New IV MUN Contact Form Submission%0A` +
+        `Name: ${encodeURIComponent(name)}%0A` +
+        `Email: ${encodeURIComponent(email)}%0A` +
+        `Subject: ${encodeURIComponent(subject)}%0A` +
+        `Message: ${encodeURIComponent(message)}`;
+
+      window.open(`https://wa.me/923714744050?text=${text}`, '_blank');
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

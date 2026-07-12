@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verify your Invictus MUN certificate online — enter your certificate ID to confirm authenticity.">
+  <title>Certificate Verification — Invictus MUN 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loader"><div class="loader-logo">IV MUN</div><div class="loader-bar"></div><div class="loader-text">Loading Experience</div></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IV <span>MUN</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="registration.html" class="btn btn-primary btn-sm" style="margin-left:4px;">Register</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a><a href="news.html">News</a><a href="certificate.html" class="active">Certificate</a><a href="contact.html">Contact</a><a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a>
+  </div>
+
+  <div class="search-modal">
+    <div class="search-box">
+      <div class="search-input-wrap"><i class="fas fa-search"></i><input type="text" placeholder="Search committees, pages, FAQs..." autocomplete="off"><kbd style="font-size:0.7rem;color:var(--text-muted);background:var(--glass-bg);border:1px solid var(--glass-border);padding:2px 8px;border-radius:4px;">ESC</kbd></div>
+      <div class="search-results"><div class="search-hint">Type at least 2 characters to search...</div></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> <span class="sep"><i class="fas fa-chevron-right"></i></span> <span class="current">Certificate Verification</span></div>
+      <div class="section-label" style="justify-content:center;">Verify</div>
+      <h1 class="section-title mt-2">Certificate <span class="gold-text">Verification</span></h1>
+      <p class="section-desc mx-auto" style="text-align:center;">Enter your certificate ID to verify its authenticity.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="verify-box glass anim">
+        <div class="verify-icon"><i class="fas fa-certificate"></i></div>
+        <h2 style="margin-bottom:8px;">Verify Your Certificate</h2>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:32px;">Enter the unique Certificate ID printed on your certificate to verify its authenticity.</p>
+
+        <form id="verifyForm" style="max-width:400px;margin:0 auto;">
+          <div class="form-group">
+            <label class="form-label">Certificate ID</label>
+            <input type="text" id="certId" class="form-input" placeholder="e.g., IV-MUN-2026-001" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fas fa-shield-halved"></i> Verify Certificate
+          </button>
+        </form>
+
+        <div id="verifyResult" class="verify-result"></div>
+
+        <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--glass-border);">
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-bottom:0;">
+            <i class="fas fa-info-circle" style="color:var(--gold);margin-right:4px;"></i>
+            For verification issues, contact us at <a href="mailto:certificates@ivmun.com">certificates@ivmun.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:700px;">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">How It Works</div>
+        <h2>Verification <span class="gold-text">Process</span></h2>
+      </div>
+      <div class="grid" style="grid-template-columns:1fr 1fr 1fr;gap:24px;">
+        <div class="glass-static anim anim-delay-1" style="padding:32px;text-align:center;">
+          <div style="width:48px;height:48px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--gold-subtle);color:var(--gold);font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">1</div>
+          <h4 style="margin-bottom:6px;">Enter ID</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">Type your certificate ID exactly as printed on the document.</p>
+        </div>
+        <div class="glass-static anim anim-delay-2" style="padding:32px;text-align:center;">
+          <div style="width:48px;height:48px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--gold-subtle);color:var(--gold);font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">2</div>
+          <h4 style="margin-bottom:6px;">Verify</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">Our system checks the ID against our secure database.</p>
+        </div>
+        <div class="glass-static anim anim-delay-3" style="padding:32px;text-align:center;">
+          <div style="width:48px;height:48px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--gold-subtle);color:var(--gold);font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">3</div>
+          <h4 style="margin-bottom:6px;">Results</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">See delegate name, committee, award, and event details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo" style="font-size:1.6rem;">IV <span>MUN</span></a><p>Invictus Model United Nations 2026 — Where diplomacy meets destiny.</p><div class="footer-social"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a></div></div>
+        <div><div class="footer-title">Quick Links</div><div class="footer-links"><a href="about.html">About</a><a href="committees.html">Committees</a><a href="registration.html">Registration</a><a href="schedule.html">Schedule</a><a href="gallery.html">Gallery</a></div></div>
+        <div><div class="footer-title">Resources</div><div class="footer-links"><a href="news.html">News</a><a href="certificate.html">Certificate Verification</a><a href="#">Study Guides</a><a href="#">Code of Conduct</a></div></div>
+        <div><div class="footer-title">Contact</div><div class="footer-links"><a href="mailto:info@ivmun.com"><i class="fas fa-envelope" style="width:16px;"></i> info@ivmun.com</a><a href="tel:+0000000000"><i class="fas fa-phone" style="width:16px;"></i> +00 000 000 000</a></div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copy">&copy; 2025 Invictus MUN. All rights reserved.</div><div class="footer-dev">Developed by Hammad Ali Khan &nbsp;<a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a></div></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

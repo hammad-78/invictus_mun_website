@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invictus Model United Nations 2026 — A prestigious international MUN conference fostering diplomacy, debate, and global citizenship.">
+  <meta name="keywords" content="MUN, Model United Nations, Invictus MUN, IV MUN 2026, diplomacy, debate">
+  <title>Invictus MUN 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-logo">IV MUN</div>
+    <div class="loader-bar"></div>
+    <div class="loader-text">Loading Experience</div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">IV <span>MUN</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="committees.html">Committees</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+        <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        <a href="registration.html" class="btn btn-primary btn-sm" style="margin-left:4px;">Register</a>
+        <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="committees.html">Committees</a>
+    <a href="registration.html">Registration</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://hammad-portfolio-website.vercel.app/" target="_blank" rel="noopener">Contact Developer</a>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="search-modal">
+    <div class="search-box">
+      <div class="search-input-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search committees, pages, FAQs..." autocomplete="off">
+        <kbd style="font-size:0.7rem;color:var(--text-muted);background:var(--glass-bg);border:1px solid var(--glass-border);padding:2px 8px;border-radius:4px;">ESC</kbd>
+      </div>
+      <div class="search-results">
+        <div class="search-hint">Type at least 2 characters to search...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge anim"><i class="fas fa-star"></i> July 24–26, 2026 &bull; International Conference</div>
+      <h1 class="anim anim-delay-1"><span class="gold-text">Invictus</span> Model United Nations <span style="font-size:0.5em;vertical-align:super;color:var(--gold);">2026</span></h1>
+      <p class="hero-sub anim anim-delay-2">Where future diplomats converge to debate, deliberate, and shape the world of tomorrow. Join 357+ delegates from across the globe.</p>
+      <div class="hero-actions anim anim-delay-3">
+        <a href="registration.html" class="btn btn-primary btn-lg">Register Now <i class="fas fa-arrow-right"></i></a>
+        <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
+      </div>
+      <div class="countdown anim anim-delay-4">
+        <div class="countdown-item">
+          <div class="countdown-num" data-countdown="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-num" data-countdown="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-num" data-countdown="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-num" data-countdown="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT PREVIEW ====== -->
+  <section class="section" id="about-preview">
+    <div class="container">
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+        <div class="anim-left">
+          <div class="section-label">About IV MUN</div>
+          <h2 class="section-title">Redefining <span class="gold-text">Diplomacy</span></h2>
+          <p>Invictus Model United Nations is a premier MUN conference that brings together passionate delegates, seasoned chairs, and distinguished speakers for an unforgettable experience in international diplomacy and debate.</p>
+          <p>Our mission is to cultivate leadership, critical thinking, and global awareness among the youth, empowering them to become the changemakers of tomorrow.</p>
+          <a href="about.html" class="btn btn-outline btn-sm mt-3">Discover More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="anim-right">
+          <div style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--glass-border);aspect-ratio:4/3;">
+            <img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbXIIcEmu7FLwepR7KmvUWGsVsbAqbxIn3dS51IXM3warirAbT_g4wTY&s=10" alt="Invictus MUN Conference" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SG MESSAGE ====== -->
+  <section class="section section-alt" id="sg-message">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">A Message From</div>
+        <h2 class="section-title">The Secretary-General</h2>
+      </div>
+      <div class="sg-section">
+        <div class="anim-left">
+          <div class="sg-img">
+            <img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJr0WJAdCv4DNdeklrK5sUrnJle4kT2AwarP7rBgJn7xkenQN_2st0gk&s=10" alt="Secretary-General">
+          </div>
+        </div>
+        <div class="anim-right">
+          <div class="sg-name">Ibrahim Kayani</div>
+          <div class="sg-role">Secretary-General, IV MUN 2026</div>
+          <p>Dear Delegates,</p>
+          <p>It is with immense pride and anticipation that I invite you to the fourth edition of Invictus Model United Nations. Since our inception, we have strived to create a platform where young minds engage with the most pressing global challenges.</p>
+          <p>IV MUN 2026 promises to be our most ambitious conference yet — with five diverse committees, an exceptional executive board, and a commitment to excellence that defines the Invictus spirit. "Invictus" — unconquered — is not just our name; it is our philosophy.</p>
+          <p>I look forward to welcoming you to what will undoubtedly be a transformative experience.</p>
+          <p style="color:var(--gold);font-family:var(--font-heading);font-style:italic;margin-top:1.5rem;">Yours in diplomacy,</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== STATS ====== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid" style="justify-content:center;max-width:700px;margin:0 auto;">
+        <div class="stat-card glass anim anim-delay-1">
+          <div class="stat-num" data-counter="357" data-suffix="+">0</div>
+          <div class="stat-label">Delegates</div>
+        </div>
+        <div class="stat-card glass anim anim-delay-2">
+          <div class="stat-num" data-counter="5">0</div>
+          <div class="stat-label">Committees</div>
+        </div>
+        <div class="stat-card glass anim anim-delay-4">
+          <div class="stat-num" data-counter="3">0</div>
+          <div class="stat-label">Days</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURED COMMITTEES ====== -->
+  <section class="section section-alt" id="committees-preview">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Committees</div>
+        <h2 class="section-title">Featured <span class="gold-text">Committees</span></h2>
+        <p class="section-desc mx-auto">Explore our diverse range of committees catering to all experience levels.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="com-card glass anim anim-delay-1">
+          <div class="com-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>UNSC</h3>
+          <p>The United Nations Security Council addresses threats to international peace and security.</p>
+          <div class="com-meta">
+            <span class="com-tag">Advanced</span>
+            <span class="com-tag">20 Delegates</span>
+          </div>
+          <a href="committees.html#unsc" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+        <div class="com-card glass anim anim-delay-2">
+          <div class="com-icon"><i class="fas fa-globe"></i></div>
+          <h3>OIC</h3>
+          <p>The Organization of Islamic Cooperation fosters cooperation among Muslim-majority nations.</p>
+          <div class="com-meta">
+            <span class="com-tag">Intermediate</span>
+            <span class="com-tag">40 Delegates</span>
+          </div>
+          <a href="committees.html#oic" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+        <div class="com-card glass anim anim-delay-3">
+          <div class="com-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>UNHRC</h3>
+          <p>The UN Human Rights Council promotes and protects human rights worldwide.</p>
+          <div class="com-meta">
+            <span class="com-tag">Intermediate</span>
+            <span class="com-tag">45 Delegates</span>
+          </div>
+          <a href="committees.html#unhrc" class="btn btn-outline btn-sm">Learn More</a>
+        </div>
+      </div>
+      <div class="text-center mt-4 anim">
+        <a href="committees.html" class="btn btn-ghost">View All Committees <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TIMELINE ====== -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Journey</div>
+        <h2 class="section-title">Event <span class="gold-text">Timeline</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">5th July 2026</div>
+          <div class="timeline-title">Registration Opens</div>
+          <div class="timeline-desc">Delegate registrations officially open for all five committees.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">22nd July 2026</div>
+          <div class="timeline-title">Registration Closes</div>
+          <div class="timeline-desc">Final deadline for all delegate registrations and fee submissions.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">At Time of Registration</div>
+          <div class="timeline-title">Delegate Allocation</div>
+          <div class="timeline-desc">Country and committee allocations are announced to all registered delegates.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">18th July 2026</div>
+          <div class="timeline-title">Study Guide Release</div>
+          <div class="timeline-desc">Comprehensive study guides released for all committees.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">24th July 2026</div>
+          <div class="timeline-title">Event Day 1</div>
+          <div class="timeline-desc">Opening ceremony and first committee sessions commence.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">25th July 2026</div>
+          <div class="timeline-title">Event Day 2</div>
+          <div class="timeline-desc">Continued committee sessions, crisis updates, and working paper submissions.</div>
+        </div>
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">26th July 2026</div>
+          <div class="timeline-title">Event Day 3 & Closing Ceremony</div>
+          <div class="timeline-desc">Final resolutions, crisis conclusions, and the grand closing ceremony with awards.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SCHEDULE PREVIEW ====== -->
+  <section class="section section-alt" id="schedule-preview">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Programme</div>
+        <h2 class="section-title">Schedule <span class="gold-text">Preview</span></h2>
+      </div>
+      <div style="max-width:700px;margin:0 auto;">
+        <div class="schedule-card glass-static anim">
+          <div class="schedule-time">09:00</div>
+          <div class="schedule-info">
+            <h4>Opening Ceremony</h4>
+            <p>Keynote address, executive board introductions, and official conference opening.</p>
+            <div class="schedule-loc"><i class="fas fa-map-marker-alt"></i> Main Hall</div>
+          </div>
+        </div>
+        <div class="schedule-card glass-static anim">
+          <div class="schedule-time">11:00</div>
+          <div class="schedule-info">
+            <h4>Committee Session I</h4>
+            <p>General Speakers' List and formal debate begins in all committees.</p>
+            <div class="schedule-loc"><i class="fas fa-map-marker-alt"></i> Committee Rooms</div>
+          </div>
+        </div>
+        <div class="schedule-card glass-static anim">
+          <div class="schedule-time">14:00</div>
+          <div class="schedule-info">
+            <h4>Committee Session II</h4>
+            <p>Moderated caucus, unmoderated caucus, and working paper drafting.</p>
+            <div class="schedule-loc"><i class="fas fa-map-marker-alt"></i> Committee Rooms</div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 anim">
+        <a href="schedule.html" class="btn btn-outline btn-sm">View Full Schedule <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== VENUE ====== -->
+  <section class="section" id="venue">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Location</div>
+        <h2 class="section-title">The <span class="gold-text">Venue</span></h2>
+        <p class="section-desc mx-auto">Our prestigious venue provides the perfect backdrop for diplomatic discourse.</p>
+      </div>
+      <div class="venue-map anim">
+        <div class="venue-map-placeholder">
+          <i class="fas fa-map-location-dot"></i>
+          <p>Google Maps Embed Placeholder</p>
+          <p style="font-size:0.75rem;">Replace with actual Google Maps iframe</p>
+        </div>
+      </div>
+      <div class="grid grid-3 mt-4">
+        <div class="glass-static anim anim-delay-1" style="padding:28px;">
+          <div style="color:var(--gold);font-size:1.2rem;margin-bottom:12px;"><i class="fas fa-building"></i></div>
+          <h4 style="margin-bottom:6px;">Venue Name</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">Full venue name and address will be updated here.</p>
+        </div>
+        <div class="glass-static anim anim-delay-2" style="padding:28px;">
+          <div style="color:var(--gold);font-size:1.2rem;margin-bottom:12px;"><i class="fas fa-plane"></i></div>
+          <h4 style="margin-bottom:6px;">Travel Information</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">Airport transfers and accommodation details to be announced.</p>
+        </div>
+        <div class="glass-static anim anim-delay-3" style="padding:28px;">
+          <div style="color:var(--gold);font-size:1.2rem;margin-bottom:12px;"><i class="fas fa-location-dot"></i></div>
+          <h4 style="margin-bottom:6px;">Nearby Landmarks</h4>
+          <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0;">Hotels, restaurants, and points of interest near the venue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SPONSORS ====== -->
+  <section class="section section-alt" id="sponsors">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Partners</div>
+        <h2 class="section-title">Our <span class="gold-text">Sponsors</span></h2>
+      </div>
+      <div class="sponsors-track anim">
+        <div class="sponsor-logo">Sponsor 1</div>
+        <div class="sponsor-logo">Sponsor 2</div>
+        <div class="sponsor-logo">Sponsor 3</div>
+        <div class="sponsor-logo">Sponsor 4</div>
+        <div class="sponsor-logo">Sponsor 5</div>
+        <div class="sponsor-logo">Sponsor 6</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY PREVIEW ====== -->
+  <section class="section" id="gallery-preview">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Memories</div>
+        <h2 class="section-title">Event <span class="gold-text">Gallery</span></h2>
+      </div>
+      <div class="gallery-grid" style="display:flex;justify-content:center;">
+        <!-- Gallery listings commented out as per request -->
+        <!--
+        <div class="gallery-item anim anim-delay-1">
+          <img data-src="https://picsum.photos/seed/ivmun-g1/600/450.jpg" alt="Gallery Image 1">
+          <div class="gallery-overlay"><span>Opening Ceremony</span></div>
+        </div>
+        <div class="gallery-item anim anim-delay-2">
+          <img data-src="https://picsum.photos/seed/ivmun-g2/600/450.jpg" alt="Gallery Image 2">
+          <div class="gallery-overlay"><span>Committee Session</span></div>
+        </div>
+        <div class="gallery-item anim anim-delay-3">
+          <img data-src="https://picsum.photos/seed/ivmun-g3/600/450.jpg" alt="Gallery Image 3">
+          <div class="gallery-overlay"><span>Awards Night</span></div>
+        </div>
+        -->
+        <!-- Three highlighted placeholders -->
+        <!-- <div class="gallery-item highlighted anim anim-delay-1" style="background:var(--glass-bg);border:1px solid var(--gold);border-radius:8px;padding:20px;text-align:center;">
+          <i class="fas fa-image"></i>
+          <h4>Gallery Coming Soon</h4>
+          <p>Gallery will soon be posted and event pictures will also be published here.</p>
+        </div> -->
+        <div class="gallery-item highlighted anim anim-delay-2" style="background:var(--glass-bg);border:1px solid var(--gold);border-radius:8px;padding:20px;text-align:center;">
+          <i class="fas fa-images"></i>
+          <h4>Event Pictures Soon</h4>
+          <p>Gallery will soon be posted and event pictures will also be published here.</p>
+        </div>
+        <!-- <div class="gallery-item highlighted anim anim-delay-3" style="background:var(--glass-bg);border:1px solid var(--gold);border-radius:8px;padding:20px;text-align:center;">
+          <i class="fas fa-camera"></i>
+          <h4>Gallery Updates</h4>
+          <p>Gallery will soon be posted and event pictures will also be published here.</p>
+        </div> -->
+      </div>
+      <div class="text-center mt-4 anim">
+        <a href="gallery.html" class="btn btn-ghost">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== NEWS PREVIEW ====== -->
+  <section class="section section-alt" id="news-preview">
+    <div class="container">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Stay Updated</div>
+        <h2 class="section-title">Latest <span class="gold-text">News</span></h2>
+      </div>
+      <div class="grid grid-3" style="display:flex;justify-content:center;">
+        <!-- News listings commented out as per request -->
+        <!--
+        <div class="news-card glass anim anim-delay-1">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivmun-n1/600/400.jpg" alt="News 1">
+          <div class="news-card-body">
+            <div class="news-card-date">December 10, 2025</div>
+            <h4 class="news-card-title">Registration Now Open for IV MUN 2026</h4>
+            <p class="news-card-excerpt">We are thrilled to announce that delegate registrations for all five committees are now open.</p>
+            <a href="news.html" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card glass anim anim-delay-2">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivmun-n2/600/400.jpg" alt="News 2">
+          <div class="news-card-body">
+            <div class="news-card-date">November 28, 2025</div>
+            <h4 class="news-card-title">Executive Board Applications Closed</h4>
+            <p class="news-card-excerpt">Thank you to all who applied. Our EB selection process is now underway.</p>
+            <a href="news.html" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card glass anim anim-delay-3">
+          <img class="news-card-img" data-src="https://picsum.photos/seed/ivmun-n3/600/400.jpg" alt="News 3">
+          <div class="news-card-body">
+            <div class="news-card-date">November 15, 2025</div>
+            <h4 class="news-card-title">Committee Agendas Revealed</h4>
+            <p class="news-card-excerpt">Explore the exciting agendas for each of our five committees at IV MUN 2026.</p>
+            <a href="news.html" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        -->
+        <div class="news-card highlighted anim anim-delay-2" style="background:var(--glass-bg);border:1px solid var(--gold);border-radius:8px;padding:20px;text-align:center;">
+          <i class="fas fa-bullhorn"></i>
+          <h4>Registrations Now Live!</h4>
+          <p>Delegate registrations for IV MUN 2026 are officially open. Secure your spot today.</p>
+          <a href="registration.html" class="btn btn-outline btn-sm mt-3">Register Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="text-center mt-4 anim">
+        <a href="news.html" class="btn btn-ghost">All Announcements <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQs ====== -->
+  <section class="section" id="faq">
+    <div class="container" style="max-width:760px;">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Questions</div>
+        <h2 class="section-title">Frequently <span class="gold-text">Asked</span></h2>
+      </div>
+      <div class="anim">
+        <div class="faq-item">
+          <div class="faq-q">What is Model United Nations?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Model United Nations is an educational simulation where students role-play as delegates to the UN and simulate UN committees. Participants develop critical thinking, public speaking, and diplomatic skills while discussing global issues.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Who can participate in IV MUN 2026?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">IV MUN 2026 is open to university and high school students (with prior MUN experience for advanced committees). Whether you're a first-time delegate or a seasoned MUNer, we have a committee for you.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is the dress code?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Formal Western or national dress is required. For gentlemen, a suit and tie. For ladies, formal business attire. National dress representing your assigned country is also encouraged and welcomed.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is there a registration fee?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes, there is a nominal registration fee that covers conference materials, meals, social events, and certificates. Details regarding the fee structure and payment methods will be shared upon registration.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Will certificates be provided?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Yes, all participants receive verified certificates of participation. Outstanding delegates receive recognition awards. Certificates can be verified online through our Certificate Verification portal.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is accommodation provided?<span class="faq-icon"><i class="fas fa-plus"></i></span></div>
+          <div class="faq-a"><div class="faq-a-inner">While accommodation is not included in the registration fee, we have partnered with nearby hotels to offer discounted rates for out-of-city delegates. Details will be shared after registration.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT PREVIEW ====== -->
+  <section class="section section-alt" id="contact-preview">
+    <div class="container" style="max-width:700px;">
+      <div class="text-center mb-5 anim">
+        <div class="section-label" style="justify-content:center;">Get in Touch</div>
+        <h2 class="section-title">Contact <span class="gold-text">Us</span></h2>
+        <p class="section-desc mx-auto">Have questions? Reach out and our team will get back to you promptly.</p>
+      </div>
+      <div class="glass-static anim" style="padding:40px;">
+        <div class="grid grid-2" style="gap:16px;">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-input" id="contactName" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="contactEmail" placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" id="contactSubject" placeholder="How can we help?">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" id="contactMessage" placeholder="Your message..." rows="4"></textarea>
+        </div>
+        <button class="btn btn-primary" type="button" id="whatsappSubmitBtn">Send Message <i class="fas fa-paper-plane"></i></button>
+      </div>
+      <script>
+        // TODO: replace with your actual WhatsApp number, country code first, no + or spaces (e.g. "923001234567" for Pakistan)
+        const WHATSAPP_NUMBER = "923714744050";
+
+        document.getElementById('whatsappSubmitBtn').addEventListener('click', function () {
+          const name = document.getElementById('contactName').value.trim();
+          const email = document.getElementById('contactEmail').value.trim();
+          const subject = document.getElementById('contactSubject').value.trim();
+          const message = document.getElementById('contactMessage').value.trim();
+
+          if (!name || !message) {
+            alert('Please fill in at least your name and message.');
+            return;
+          }
+
+          const text =
+            `New IV MUN Contact Form Submission%0A` +
+            `Name: ${encodeURIComponent(name)}%0A` +
+            `Email: ${encodeURIComponent(email)}%0A` +
+            `Subject: ${encodeURIComponent(subject)}%0A` +
+            `Message: ${encodeURIComponent(message)}`;
+
+          window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+        });
+      </script>
+      <div class="text-center mt-4 anim">
+        <a href="contact.html" class="btn btn-ghost">Full Contact Details <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <button class="back-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="Gallery Image">
+    <button class="lightbox-nav lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.6rem;">IV <span>MUN</span></a>
+          <p>Invictus Model United Nations 2026 — Where diplomacy meets destiny. Join us for an unparalleled MUN experience.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Quick Links</div>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="committees.html">Committees</a>
+            <a href="registration.html">Registration</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Resources</div>
+          <div class="footer-links">
+            <a href="news.html">News</a>
+            <a href="certificate.html">Certificate Verification</a>
+            <a href="#">Study Guides</a>
+            <a href="#">Code of Conduct</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <div class="footer-links">
+            <a href="mailto:info@ivmun.com"><i class="fas fa-envelope" style="width:16px;"></i> info@ivmun.com</a>
+            <a href="tel:+0000000000"><i class="fas fa-phone" style="width:16px;"></i> +00 000 000 000</a>
+            <a href="contact.html"><i class="fas fa-map-marker-alt" style="width:16px;"></i> Venue Address</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2025 Invictus MUN. All rights reserved.</div>
+        <div class="footer-dev">
+          Developed by Tech Head Hammad Ali Khan & Muhammad Majid Nawaz &nbsp;
+          <a href="https://hammad-portfolio-website.vercel.app/ " target="_blank" rel="noopener">Contact Developer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
